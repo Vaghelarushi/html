@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in Javascript</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1>Class in Javascript</h1>
+        <script>
+
+            // Declaring Method
+            class Product{
+                constructor(itemname){
+                    this.itemname = itemname
+                    // this.price = price
+                    // this.code = code
+                }
+                  getitemname(){
+                    return this.itemname + "is a Product"
+                  }
+            }
+           
+            //Extends Class 
+            class Box extends Product{
+                constructor(itemname){
+                    super(itemname);
+                }
+                getitemname(){
+                    return this.itemname + "is a Furniture"
+                }
+            }
+
+            let book = new Product("Book", 35, "BK")
+            let pen1 = new Box("pen", 10, "P1")
+
+            //Expression Method
+            const Product1 = class Product{
+                constructor(itemname,price,code){
+                    this.itemname = itemname;
+                    this.price = price;
+                    this.discount = discout;
+                    this.code = code;
+                }
+
+                get GetDiscount(){
+                    return this.discount
+                }
+                set SetDiscount(value){
+                    this.discount = value
+                }
+
+                //Definition Method
+                discountvalue(){
+                    return this.discount*this.price/100
+                }
+            }
+            let pen = new Product1("pen", 10, "P1")
+        </script>
+</body>
+</html>

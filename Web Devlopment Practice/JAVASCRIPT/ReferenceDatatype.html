@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReferenceDatatypes in Javascript</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>ReferenceDatatypes in Javascript</h1>
+    <script>
+        // Objects
+        let animal ={
+            name:"Cow",
+            legs: 4,
+            eyes: 2,
+            ears: 2
+        }
+        console.log(animal)
+        // Dot Notation
+        console.log(animal.name)
+
+        let earsprop = "ears"
+        console.log(animal[earsprop])// Bracket Notation
+
+        //Arrays
+        let names = ["Raj", "Rushi", "Vivek"]
+        console.log(names.length)
+        console.log(names.indexOf("Vivek"))
+
+        //Function
+        function greet(name){
+            console.log("Har Har Mahadev" +" "+ name)
+        }
+
+        greet("Dhamu")
+
+    </script>
+</body>
+</html>

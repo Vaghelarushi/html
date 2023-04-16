@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Javascript</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Object in Javascript</h1>
+    <script>
+
+        // Object
+        const animal ={
+            name:"dog",
+            legs: 4,
+            eyes: 2,
+            ears: 2
+         }
+
+        // Factory Function
+        function Animal(name,legs,eyes){
+            return{
+                name:name,
+                legs:legs,
+                eyes:eyes
+            }
+        }
+
+        let a = Animal("cow",4,2)
+        console.log(a)
+      
+        // Same object
+        let Animal_2 = {...animal}
+        console.log(Animal_2)
+
+        //Object Exercise
+        function Mobile(name,price,code){
+            return{
+                ItemName:name,
+                Price:price,
+                Code:code, 
+            }
+        }
+        let MobileList = Mobile("Iphone",80000,"IP13")
+        console.log(MobileList)
+    </script>
+</body>
+</html>
