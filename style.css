@@ -1,0 +1,28 @@
+.card:hover{
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	animation-name: sample;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-direction: reverse;
+	animation-iteration-count: 4;
+	opacity: 0.5;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@keyframes sample{
+	from{
+		background-color: red;
+	}
+	to{
+		background-color: green;
+	}
+}
